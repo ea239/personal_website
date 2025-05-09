@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evan Zhang | Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="intro-screen">
+        <div class="intro-name">Evan Zhang</div>
+    </div>
+
+    <section class="section hero">
+        <div class="hero-content">
+            <h1>Evan Zhang</h1>
+            <p>
+            Computer Engineering Student<br>
+            University of Waterloo
+            </p>
+            <div class="social-icons">
+                <a href="mailto:e252zhan@uwaterloo.ca" target="_blank" aria-label="Email">
+                    <img src="assets/email.svg" alt="Email icon">
+                </a>
+                <a href="https://github.com/ea239" target="_blank" aria-label="GitHub">
+                    <img src="assets/github.svg" alt="GitHub icon">
+                </a>
+                <a href="https://linkedin.com/in/evan-zhang-920357290" target="_blank" aria-label="LinkedIn">
+                    <img src="assets/linkedin.svg" alt="LinkedIn icon">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>
+            I'm a Computer Engineering student at the University of Waterloo specializing in machine learning, robotics, and full-stack development. My interests lie in building intelligent systems that bridge software with the physical world.
+            </p>
+        </div>
+    </section>
+
+    <section class="section projects">
+        <div class="projects-container">
+            <div class="project-list">
+                <button data-project="site-builder" class="selected">Interactive Site Builder</button>
+                <button data-project="navigation-system">Autonomous Navigation</button>
+                <button data-project="nlp-model">Text Emotion Detection</button>
+            </div>
+            <div class="project-detail">
+                <div class="project-content" id="site-builder">
+                    <h3>Interactive Site Builder</h3>
+                    <p>
+                    A fullstack tool that allows users to visually create and publish websites using React, Node.js, and the Canvas API. Includes real-time layout editing, asset management, and secure JWT-based authentication.
+                    </p>
+                </div>
+                <div class="project-content" id="navigation-system" style="display: none;">
+                    <h3>Autonomous Navigation</h3>
+                    <p>
+                    Developed a robotics navigation stack using C++ and ROS1. Implemented A* and RRT algorithms for path planning, integrated LiDAR and depth camera input for real-time obstacle avoidance, and optimized sensor fusion with IMU and visual odometry.
+                    </p>
+                </div>
+                <div class="project-content" id="nlp-model" style="display: none;">
+                    <h3>Text Emotion Detection</h3>
+                    <p>
+                    Researched and evaluated machine learning models (SVM, CNN, RNN) for classifying emotions in text. Trained on 20K+ samples and achieved up to 85% accuracy. Published findings at the ICIST Conference.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
